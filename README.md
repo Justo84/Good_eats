@@ -1,2 +1,1 @@
-# Good_eats
-# Good_eats
+A simple exercise in PostgreSQL.  A website for adding and reviewing restaurants.
