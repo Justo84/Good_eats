@@ -1,0 +1,14 @@
+<h1><%= @restaurant.name %></h1>
+<h6> By User ID: <%= @restaurant.user_id %></h6>
+<p><%= @restaurant.description %></p>
+<div>&nbsp;</div>
+
+<br>
+<%= link_to "Review this Restaurant", new_restaurant_review_path(@restaurant) %>
+
+<div>&nbsp;</div>
+<h2> REVIEWS: </h2>
+<% @reviews.each do |r| %>
+<h6> User ID: <%= r.user_id %></h6>
+<p> <%= r.review %></p>
+<% end %>
